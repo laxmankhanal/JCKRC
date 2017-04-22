@@ -1,12 +1,15 @@
 PODS:
+  - IQKeyboardManagerSwift (4.0.9)
   - MBProgressHUD (1.0.0)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
   - MBProgressHUD (~> 1.0.0)
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
 
-PODFILE CHECKSUM: a5bd0d5155c1dc60fe2076a213ba4266d23d1f5a
+PODFILE CHECKSUM: fdcb7499405d9b2d8353d61e5161768521517c8a
 
 COCOAPODS: 1.0.1

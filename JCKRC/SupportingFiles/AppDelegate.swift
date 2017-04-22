@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+  static let sharedInstance = AppDelegate()
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    //enable IQKeyboard so that text field don't get overlapped by keyboard
+    IQKeyboardManager.sharedManager().enable = true
+  
     return true
   }
 
