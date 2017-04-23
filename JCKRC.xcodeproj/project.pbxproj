@@ -41,6 +41,8 @@
 		15A337731EAC73E90056BFE6 /* training.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A337721EAC73E90056BFE6 /* training.storyboard */; };
 		15A337751EAC73F10056BFE6 /* backend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A337741EAC73F10056BFE6 /* backend.storyboard */; };
 		15A337771EAC7C670056BFE6 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A337761EAC7C670056BFE6 /* ListTVC.swift */; };
+		15F859C51EAC91F3005A0343 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F859C41EAC91F3005A0343 /* Key.swift */; };
+		15F859C71EAC9987005A0343 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F859C61EAC9987005A0343 /* LocationManager.swift */; };
 		EE7043B4BA1ADD9498E642DC /* Pods_JCKRC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F49CCF12673E4EB351BABE /* Pods_JCKRC.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		15A337721EAC73E90056BFE6 /* training.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = training.storyboard; sourceTree = "<group>"; };
 		15A337741EAC73F10056BFE6 /* backend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = backend.storyboard; sourceTree = "<group>"; };
 		15A337761EAC7C670056BFE6 /* ListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTVC.swift; path = ../ListTVC.swift; sourceTree = "<group>"; };
+		15F859C41EAC91F3005A0343 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		15F859C61EAC9987005A0343 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		37F49CCF12673E4EB351BABE /* Pods_JCKRC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCKRC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AA430949C36524F3C5EFF6 /* Pods-JCKRC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCKRC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCKRC/Pods-JCKRC.debug.xcconfig"; sourceTree = "<group>"; };
 		B2A1766DEBF12C96F26B9061 /* Pods-JCKRC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCKRC.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCKRC/Pods-JCKRC.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 		1538B4EC1EABA23300BC3AF0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				15F859C61EAC9987005A0343 /* LocationManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 		1538B4EF1EABA23300BC3AF0 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				15F859C41EAC91F3005A0343 /* Key.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -435,6 +441,7 @@
 				1538B5011EABBF5900BC3AF0 /* UIViewController+Extension.swift in Sources */,
 				1538B4FD1EABBE8C00BC3AF0 /* LoginVC.swift in Sources */,
 				153CC1071EABFFE5004BA7BD /* BookTrainingTVC.swift in Sources */,
+				15F859C51EAC91F3005A0343 /* Key.swift in Sources */,
 				153CC0FF1EABFF76004BA7BD /* SalesTVC.swift in Sources */,
 				1538B4F31EABA23300BC3AF0 /* AppDelegate.swift in Sources */,
 				153CC1011EABFF76004BA7BD /* BackEndVC.swift in Sources */,
@@ -457,6 +464,7 @@
 				1538B5051EABD24E00BC3AF0 /* DashBoardTVC.swift in Sources */,
 				153CC0F41EABFA2A004BA7BD /* TabBarController.swift in Sources */,
 				1538B4FB1EABB33400BC3AF0 /* LoginTVC.swift in Sources */,
+				15F859C71EAC9987005A0343 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

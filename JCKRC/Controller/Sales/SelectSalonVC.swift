@@ -1,25 +1,35 @@
 
 
 import UIKit
+import GoogleMaps
 
 class SelectSalonVC: UIViewController {
   
   @IBOutlet var cityView: UIView!
   @IBOutlet var cityNameLabel: UILabel!
-  @IBOutlet var mapView: UIView!
   @IBOutlet var selectSaloonView: UIView!
   @IBOutlet var saloonNameLabel: UILabel!
+  @IBOutlet weak var googleMapView: GMSMapView!
   
   var selectCityEnabled = false
+  var locationManager = CLLocationManager()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    cityView.layer.cornerRadius = 5
     let gesture = UITapGestureRecognizer(target: self, action: #selector(segueToCityList))
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(segueToSaloonList))
     cityView.addGestureRecognizer(gesture)
     selectSaloonView.addGestureRecognizer(tapGesture)
+    
+    googleMapView.delegate = self
+    googleMapView.isMyLocationEnabled = true
+    
+    locationManager.delegate = self
+    locationManager.startUpdatingLocation()
+//    let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+//    let map = GMSMapView.map(withFrame: mapView.bounds, camera: camera)
+//    mapView.addSubview(map)
   }
   
   func segueToCityList(sender: UITapGestureRecognizer) {
@@ -30,7 +40,7 @@ class SelectSalonVC: UIViewController {
   
   func segueToSaloonList() {
     selectCityEnabled = false
-    let data = ["a","b","c","Chicago","Los Angeles","Austin","Seattle"]
+    let data = ["A Super Look 9","b","c","Chicago","Los Angeles","Austin","Seattle"]
     segueToList(with: data, having: "Select Saloon")
   }
   
@@ -41,7 +51,32 @@ class SelectSalonVC: UIViewController {
     listTVC.delegate = self
     navigationController?.pushViewController(listTVC, animated: true)
   }
+  
+  func animateCamera(to coordinate: CLLocationCoordinate2D) {
+    let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude:coordinate.longitude, zoom:14)
+    googleMapView.animate(to: camera)
+  }
 
+}
+
+extension SelectSalonVC: GMSMapViewDelegate {
+
+}
+
+extension SelectSalonVC: CLLocationManagerDelegate {
+  
+  //Location Manager delegates
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    
+    guard let location = locations.last else { return }
+    
+    animateCamera(to: location.coordinate)
+    
+    //Finally stop updating location otherwise it will come again and again in this delegate
+    self.locationManager.stopUpdatingLocation()
+    
+  }
+  
 }
 
 extension SelectSalonVC: ListTVCDelegate {
@@ -52,6 +87,9 @@ extension SelectSalonVC: ListTVCDelegate {
       cityNameLabel.text = value
     } else {
       saloonNameLabel.text = value
+      let fullAddress =  "\(cityNameLabel.text!)"
+      guard let coordinates = LocationManager.getCoordinates(for: fullAddress) else { return }
+      animateCamera(to: coordinates)
     }
   }
   
