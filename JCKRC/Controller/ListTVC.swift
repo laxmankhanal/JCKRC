@@ -58,7 +58,7 @@ class ListTVC: UITableViewController {
     }
     
     delegate?.didSelectItem(value: item)
-    navigationController?.popViewController(animated: true)
+    self.navigationController?.popViewController(animated: true)
   }
   
 }

@@ -41,8 +41,15 @@
 		15A337731EAC73E90056BFE6 /* training.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A337721EAC73E90056BFE6 /* training.storyboard */; };
 		15A337751EAC73F10056BFE6 /* backend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A337741EAC73F10056BFE6 /* backend.storyboard */; };
 		15A337771EAC7C670056BFE6 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A337761EAC7C670056BFE6 /* ListTVC.swift */; };
+		15DC226E1EACB3070099E0D5 /* NameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC226D1EACB3070099E0D5 /* NameViewCell.swift */; };
+		15DC22701EACBB540099E0D5 /* Therapist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC226F1EACBB540099E0D5 /* Therapist.swift */; };
+		15DC22721EACBC050099E0D5 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC22711EACBC050099E0D5 /* Owner.swift */; };
+		15DC22741EACBC5C0099E0D5 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC22731EACBC5C0099E0D5 /* Brand.swift */; };
+		15DC22761EACBC730099E0D5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC22751EACBC730099E0D5 /* Product.swift */; };
+		15DC22781EACC3C00099E0D5 /* QuestioniareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC22771EACC3C00099E0D5 /* QuestioniareVC.swift */; };
 		15F859C51EAC91F3005A0343 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F859C41EAC91F3005A0343 /* Key.swift */; };
 		15F859C71EAC9987005A0343 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F859C61EAC9987005A0343 /* LocationManager.swift */; };
+		15F859C91EACAA98005A0343 /* QuestioniareTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F859C81EACAA98005A0343 /* QuestioniareTVC.swift */; };
 		EE7043B4BA1ADD9498E642DC /* Pods_JCKRC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F49CCF12673E4EB351BABE /* Pods_JCKRC.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,8 +89,15 @@
 		15A337721EAC73E90056BFE6 /* training.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = training.storyboard; sourceTree = "<group>"; };
 		15A337741EAC73F10056BFE6 /* backend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = backend.storyboard; sourceTree = "<group>"; };
 		15A337761EAC7C670056BFE6 /* ListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTVC.swift; path = ../ListTVC.swift; sourceTree = "<group>"; };
+		15DC226D1EACB3070099E0D5 /* NameViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameViewCell.swift; sourceTree = "<group>"; };
+		15DC226F1EACBB540099E0D5 /* Therapist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Therapist.swift; sourceTree = "<group>"; };
+		15DC22711EACBC050099E0D5 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		15DC22731EACBC5C0099E0D5 /* Brand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		15DC22751EACBC730099E0D5 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		15DC22771EACC3C00099E0D5 /* QuestioniareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestioniareVC.swift; sourceTree = "<group>"; };
 		15F859C41EAC91F3005A0343 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		15F859C61EAC9987005A0343 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		15F859C81EACAA98005A0343 /* QuestioniareTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestioniareTVC.swift; sourceTree = "<group>"; };
 		37F49CCF12673E4EB351BABE /* Pods_JCKRC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCKRC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AA430949C36524F3C5EFF6 /* Pods-JCKRC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCKRC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCKRC/Pods-JCKRC.debug.xcconfig"; sourceTree = "<group>"; };
 		B2A1766DEBF12C96F26B9061 /* Pods-JCKRC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCKRC.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCKRC/Pods-JCKRC.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +179,7 @@
 				1538B4DF1EABA23300BC3AF0 /* CellTableViewCell.swift */,
 				1538B5061EABD27B00BC3AF0 /* optionTableViewCell.xib */,
 				1538B5081EABD2F000BC3AF0 /* optionTableViewCell.swift */,
+				15DC226D1EACB3070099E0D5 /* NameViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,6 +259,10 @@
 		1538B4F11EABA23300BC3AF0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				15DC226F1EACBB540099E0D5 /* Therapist.swift */,
+				15DC22711EACBC050099E0D5 /* Owner.swift */,
+				15DC22731EACBC5C0099E0D5 /* Brand.swift */,
+				15DC22751EACBC730099E0D5 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +295,8 @@
 				153CC1081EABFFFE004BA7BD /* ViewAvailibilityVC.swift */,
 				153CC10A1EAC001C004BA7BD /* BookOrderTVC.swift */,
 				15A337761EAC7C670056BFE6 /* ListTVC.swift */,
+				15F859C81EACAA98005A0343 /* QuestioniareTVC.swift */,
+				15DC22771EACC3C00099E0D5 /* QuestioniareVC.swift */,
 			);
 			path = Sales;
 			sourceTree = "<group>";
@@ -443,14 +464,20 @@
 				153CC1071EABFFE5004BA7BD /* BookTrainingTVC.swift in Sources */,
 				15F859C51EAC91F3005A0343 /* Key.swift in Sources */,
 				153CC0FF1EABFF76004BA7BD /* SalesTVC.swift in Sources */,
+				15DC22761EACBC730099E0D5 /* Product.swift in Sources */,
 				1538B4F31EABA23300BC3AF0 /* AppDelegate.swift in Sources */,
+				15DC22781EACC3C00099E0D5 /* QuestioniareVC.swift in Sources */,
+				15DC22701EACBB540099E0D5 /* Therapist.swift in Sources */,
 				153CC1011EABFF76004BA7BD /* BackEndVC.swift in Sources */,
 				15A337771EAC7C670056BFE6 /* ListTVC.swift in Sources */,
+				15F859C91EACAA98005A0343 /* QuestioniareTVC.swift in Sources */,
 				153CC1111EAC00C2004BA7BD /* OrderBackEndVC.swift in Sources */,
 				153CC1051EABFFAF004BA7BD /* AnalysisVC.swift in Sources */,
 				1538B4F21EABA23300BC3AF0 /* CellTableViewCell.swift in Sources */,
+				15DC22741EACBC5C0099E0D5 /* Brand.swift in Sources */,
 				1538B4FF1EABBF0600BC3AF0 /* Storyboard+Extension.swift in Sources */,
 				153CC10B1EAC001C004BA7BD /* BookOrderTVC.swift in Sources */,
+				15DC226E1EACB3070099E0D5 /* NameViewCell.swift in Sources */,
 				153CC1001EABFF76004BA7BD /* SelectSalonVC.swift in Sources */,
 				153CC0FE1EABFF76004BA7BD /* TrainingTVC.swift in Sources */,
 				1538B50B1EABDAFC00BC3AF0 /* DashBoardVC.swift in Sources */,
@@ -460,6 +487,7 @@
 				153CC1091EABFFFE004BA7BD /* ViewAvailibilityVC.swift in Sources */,
 				1538B5091EABD2F000BC3AF0 /* optionTableViewCell.swift in Sources */,
 				153CC1131EAC00DB004BA7BD /* LogisticsTVC.swift in Sources */,
+				15DC22721EACBC050099E0D5 /* Owner.swift in Sources */,
 				153CC10F1EAC00AF004BA7BD /* DemoKitVC.swift in Sources */,
 				1538B5051EABD24E00BC3AF0 /* DashBoardTVC.swift in Sources */,
 				153CC0F41EABFA2A004BA7BD /* TabBarController.swift in Sources */,
