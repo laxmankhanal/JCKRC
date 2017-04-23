@@ -26,9 +26,9 @@ class AnalysisVC: UIViewController {
 extension AnalysisVC {
   
   static func get() -> AnalysisVC {
-    let sb = UIStoryboard.init(storyboard: .main)
-    let AnalysisVC: AnalysisVC = sb.instantiateViewController()
-    return AnalysisVC
+    let sb = UIStoryboard.init(storyboard: .sales)
+    let analysisVC: AnalysisVC = sb.instantiateViewController()
+    return analysisVC
   }
   
 }

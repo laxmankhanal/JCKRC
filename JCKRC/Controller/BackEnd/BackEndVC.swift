@@ -47,7 +47,7 @@ class BackEndVC: UIViewController {
 extension BackEndVC {
   
   static func get() -> BackEndVC {
-    let sb = UIStoryboard.init(storyboard: .main)
+    let sb = UIStoryboard.init(storyboard: .backend)
     let backEndVC: BackEndVC = sb.instantiateViewController()
     return backEndVC
   }

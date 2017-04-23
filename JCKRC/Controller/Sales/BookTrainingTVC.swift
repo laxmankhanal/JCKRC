@@ -35,9 +35,9 @@ class BookTrainingTVC: UITableViewController {
 extension BookTrainingTVC {
   
   static func get() -> BookTrainingTVC {
-    let sb = UIStoryboard.init(storyboard: .main)
-    let BookTrainingTVC: BookTrainingTVC = sb.instantiateViewController()
-    return BookTrainingTVC
+    let sb = UIStoryboard.init(storyboard: .sales)
+    let bookTrainingTVC: BookTrainingTVC = sb.instantiateViewController()
+    return bookTrainingTVC
   }
   
 }

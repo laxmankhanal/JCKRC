@@ -20,8 +20,8 @@ extension DemoKitVC {
   
   static func get() -> DemoKitVC {
     let sb = UIStoryboard.init(storyboard: .main)
-    let DemoKitVC: DemoKitVC = sb.instantiateViewController()
-    return DemoKitVC
+    let demoKitVC: DemoKitVC = sb.instantiateViewController()
+    return demoKitVC
   }
   
 }

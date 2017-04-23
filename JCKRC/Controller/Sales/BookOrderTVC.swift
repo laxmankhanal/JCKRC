@@ -35,9 +35,9 @@ class BookOrderTVC: UITableViewController {
 extension BookOrderTVC {
   
   static func get() -> BookOrderTVC {
-    let sb = UIStoryboard.init(storyboard: .main)
-    let BookOrderTVC: BookOrderTVC = sb.instantiateViewController()
-    return BookOrderTVC
+    let sb = UIStoryboard.init(storyboard: .sales)
+    let bookOrderTVC: BookOrderTVC = sb.instantiateViewController()
+    return bookOrderTVC
   }
   
 }

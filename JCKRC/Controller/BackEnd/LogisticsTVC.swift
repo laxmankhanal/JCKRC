@@ -21,8 +21,8 @@ extension LogisticsTVC {
   
   static func get() -> LogisticsTVC {
     let sb = UIStoryboard.init(storyboard: .main)
-    let LogisticsTVC: LogisticsTVC = sb.instantiateViewController()
-    return LogisticsTVC
+    let logisticsTVC: LogisticsTVC = sb.instantiateViewController()
+    return logisticsTVC
   }
   
 }

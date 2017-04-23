@@ -71,12 +71,30 @@ class SalesTVC: UITableViewController {
     return cell
   }
   
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let salesItem = SalesItem(rawValue: indexPath.row) else { return }
+    
+    switch salesItem {
+    case .selectSalon: segueToVC(viewController: SelectSalonVC.get())
+    case .newSalon: segueToVC(viewController: NewSalonVC.get())
+    case .analysis: segueToVC(viewController: AnalysisVC.get())
+    case .training: segueToVC(viewController: TrainingTVC.get())
+    case .availaibility: segueToVC(viewController: ViewAvailibilityVC.get())
+    case .book: segueToVC(viewController: BookOrderTVC.get())
+    case .logout: segueToVC(viewController: SelectSalonVC.get())
+    }
+  }
+  
+  func segueToVC(viewController: UIViewController) {
+    navigationController?.pushViewController(viewController, animated: true)
+  }
+  
 }
 
 extension SalesTVC {
   
   static func get() -> SalesTVC {
-    let sb = UIStoryboard.init(storyboard: .main)
+    let sb = UIStoryboard.init(storyboard: .sales)
     let salesTVC: SalesTVC = sb.instantiateViewController()
     return salesTVC
   }

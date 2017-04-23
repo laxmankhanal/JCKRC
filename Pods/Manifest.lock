@@ -1,15 +1,22 @@
 PODS:
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
   - IQKeyboardManagerSwift (4.0.9)
   - MBProgressHUD (1.0.0)
 
 DEPENDENCIES:
+  - GoogleMaps
   - IQKeyboardManagerSwift
   - MBProgressHUD (~> 1.0.0)
 
 SPEC CHECKSUMS:
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
   IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
 
-PODFILE CHECKSUM: fdcb7499405d9b2d8353d61e5161768521517c8a
+PODFILE CHECKSUM: af30d14609dff5a6fc5a8a16a781633c045e6f33
 
 COCOAPODS: 1.0.1

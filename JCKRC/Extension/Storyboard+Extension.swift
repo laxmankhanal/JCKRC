@@ -23,7 +23,9 @@ extension UIStoryboard {
   enum Storyboard: String {
     case main
     case home
-    case role
+    case sales
+    case training
+    case backend
     case tabBar
     
     var fileName: String {

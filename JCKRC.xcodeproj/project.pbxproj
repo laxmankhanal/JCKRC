@@ -37,6 +37,10 @@
 		153CC10F1EAC00AF004BA7BD /* DemoKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CC10E1EAC00AF004BA7BD /* DemoKitVC.swift */; };
 		153CC1111EAC00C2004BA7BD /* OrderBackEndVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CC1101EAC00C2004BA7BD /* OrderBackEndVC.swift */; };
 		153CC1131EAC00DB004BA7BD /* LogisticsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CC1121EAC00DB004BA7BD /* LogisticsTVC.swift */; };
+		15A337711EAC73CE0056BFE6 /* sales.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A337701EAC73CE0056BFE6 /* sales.storyboard */; };
+		15A337731EAC73E90056BFE6 /* training.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A337721EAC73E90056BFE6 /* training.storyboard */; };
+		15A337751EAC73F10056BFE6 /* backend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A337741EAC73F10056BFE6 /* backend.storyboard */; };
+		15A337771EAC7C670056BFE6 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A337761EAC7C670056BFE6 /* ListTVC.swift */; };
 		EE7043B4BA1ADD9498E642DC /* Pods_JCKRC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F49CCF12673E4EB351BABE /* Pods_JCKRC.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +76,10 @@
 		153CC10E1EAC00AF004BA7BD /* DemoKitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKitVC.swift; sourceTree = "<group>"; };
 		153CC1101EAC00C2004BA7BD /* OrderBackEndVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBackEndVC.swift; sourceTree = "<group>"; };
 		153CC1121EAC00DB004BA7BD /* LogisticsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogisticsTVC.swift; sourceTree = "<group>"; };
+		15A337701EAC73CE0056BFE6 /* sales.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = sales.storyboard; sourceTree = "<group>"; };
+		15A337721EAC73E90056BFE6 /* training.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = training.storyboard; sourceTree = "<group>"; };
+		15A337741EAC73F10056BFE6 /* backend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = backend.storyboard; sourceTree = "<group>"; };
+		15A337761EAC7C670056BFE6 /* ListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTVC.swift; path = ../ListTVC.swift; sourceTree = "<group>"; };
 		37F49CCF12673E4EB351BABE /* Pods_JCKRC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCKRC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AA430949C36524F3C5EFF6 /* Pods-JCKRC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCKRC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCKRC/Pods-JCKRC.debug.xcconfig"; sourceTree = "<group>"; };
 		B2A1766DEBF12C96F26B9061 /* Pods-JCKRC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCKRC.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCKRC/Pods-JCKRC.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +141,9 @@
 				153CC0F11EABFA2A004BA7BD /* tabbar.storyboard */,
 				1538B4E21EABA23300BC3AF0 /* LaunchScreen.storyboard */,
 				1538B4E41EABA23300BC3AF0 /* main.storyboard */,
+				15A337701EAC73CE0056BFE6 /* sales.storyboard */,
+				15A337721EAC73E90056BFE6 /* training.storyboard */,
+				15A337741EAC73F10056BFE6 /* backend.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -258,6 +269,7 @@
 				153CC1061EABFFE5004BA7BD /* BookTrainingTVC.swift */,
 				153CC1081EABFFFE004BA7BD /* ViewAvailibilityVC.swift */,
 				153CC10A1EAC001C004BA7BD /* BookOrderTVC.swift */,
+				15A337761EAC7C670056BFE6 /* ListTVC.swift */,
 			);
 			path = Sales;
 			sourceTree = "<group>";
@@ -353,11 +365,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A337751EAC73F10056BFE6 /* backend.storyboard in Resources */,
 				1538B4F41EABA23300BC3AF0 /* LaunchScreen.storyboard in Resources */,
 				1538B4F51EABA23300BC3AF0 /* main.storyboard in Resources */,
 				1538B5071EABD27B00BC3AF0 /* optionTableViewCell.xib in Resources */,
 				1538B4F71EABA23300BC3AF0 /* Assets.xcassets in Resources */,
+				15A337711EAC73CE0056BFE6 /* sales.storyboard in Resources */,
 				153CC0F31EABFA2A004BA7BD /* tabbar.storyboard in Resources */,
+				15A337731EAC73E90056BFE6 /* training.storyboard in Resources */,
 				1538B4F61EABA23300BC3AF0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +438,7 @@
 				153CC0FF1EABFF76004BA7BD /* SalesTVC.swift in Sources */,
 				1538B4F31EABA23300BC3AF0 /* AppDelegate.swift in Sources */,
 				153CC1011EABFF76004BA7BD /* BackEndVC.swift in Sources */,
+				15A337771EAC7C670056BFE6 /* ListTVC.swift in Sources */,
 				153CC1111EAC00C2004BA7BD /* OrderBackEndVC.swift in Sources */,
 				153CC1051EABFFAF004BA7BD /* AnalysisVC.swift in Sources */,
 				1538B4F21EABA23300BC3AF0 /* CellTableViewCell.swift in Sources */,
@@ -567,7 +583,7 @@
 				DEVELOPMENT_TEAM = UW52P3XM67;
 				INFOPLIST_FILE = "$(SRCROOT)/JCKRC/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wordpress.iosmyso.JCKRC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spadestination.jckrc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -581,7 +597,7 @@
 				DEVELOPMENT_TEAM = UW52P3XM67;
 				INFOPLIST_FILE = "$(SRCROOT)/JCKRC/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wordpress.iosmyso.JCKRC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spadestination.jckrc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

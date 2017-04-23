@@ -75,7 +75,7 @@ class TrainingTVC: UITableViewController {
 extension TrainingTVC {
   
   static func get() -> TrainingTVC {
-    let sb = UIStoryboard.init(storyboard: .main)
+    let sb = UIStoryboard.init(storyboard: .training)
     let trainingTVC: TrainingTVC = sb.instantiateViewController()
     return trainingTVC
   }

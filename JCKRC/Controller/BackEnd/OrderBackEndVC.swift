@@ -20,8 +20,8 @@ extension OrderBackEndVC {
   
   static func get() -> OrderBackEndVC {
     let sb = UIStoryboard.init(storyboard: .main)
-    let OrderBackEndVC: OrderBackEndVC = sb.instantiateViewController()
-    return OrderBackEndVC
+    let orderBackEndVC: OrderBackEndVC = sb.instantiateViewController()
+    return orderBackEndVC
   }
   
 }

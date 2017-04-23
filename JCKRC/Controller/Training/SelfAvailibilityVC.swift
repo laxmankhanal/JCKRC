@@ -22,8 +22,8 @@ extension SelfAvailibilityVC {
   
   static func get() -> SelfAvailibilityVC {
     let sb = UIStoryboard.init(storyboard: .main)
-    let SelfAvailibilityVC: SelfAvailibilityVC = sb.instantiateViewController()
-    return SelfAvailibilityVC
+    let selfAvailibilityVC: SelfAvailibilityVC = sb.instantiateViewController()
+    return selfAvailibilityVC
   }
   
 }

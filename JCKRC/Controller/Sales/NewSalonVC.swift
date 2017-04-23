@@ -37,9 +37,9 @@ class NewSalonVC: UIViewController {
 extension NewSalonVC {
 
   static func get() -> NewSalonVC {
-    let sb = UIStoryboard.init(storyboard: .main)
-    let NewSalonVC: NewSalonVC = sb.instantiateViewController()
-    return NewSalonVC
+    let sb = UIStoryboard.init(storyboard: .sales)
+    let newSalonVC: NewSalonVC = sb.instantiateViewController()
+    return newSalonVC
   }
 
 }

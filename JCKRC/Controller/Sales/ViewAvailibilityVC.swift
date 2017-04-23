@@ -19,9 +19,9 @@ class ViewAvailibilityVC: UIViewController {
 extension ViewAvailibilityVC {
   
   static func get() -> ViewAvailibilityVC {
-    let sb = UIStoryboard.init(storyboard: .main)
-    let ViewAvailibilityVC: ViewAvailibilityVC = sb.instantiateViewController()
-    return ViewAvailibilityVC
+    let sb = UIStoryboard.init(storyboard: .sales)
+    let viewAvailibilityVC: ViewAvailibilityVC = sb.instantiateViewController()
+    return viewAvailibilityVC
   }
   
 }
