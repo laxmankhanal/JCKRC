@@ -1,21 +1,20 @@
-//
-//  AppDelegate.swift
-//  JCKRC
-//
-//  Created by Pro on 4/22/17.
-//  Copyright © 2017 leapfrog-laxman. All rights reserved.
-//
 
 import UIKit
+import IQKeyboardManagerSwift
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+  static let sharedInstance = AppDelegate()
+  
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    //enable IQKeyboard so that text field don't get overlapped by keyboard
+    IQKeyboardManager.sharedManager().enable = true
+    GMSServices.provideAPIKey(Key.GoogleAPI)
+  
     return true
   }
 
